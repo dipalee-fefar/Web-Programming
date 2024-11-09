@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second example of armstrong</title>
+	<script type="text/javascript">
+		
+		var num=parseInt(prompt("Enter any number"));
+		var numOfDigits=num.toString()().length();
+		var sum=0;
+		var temp=num;
+
+		while(temp>0)
+		{
+			var digit=temp%10;
+			sum+=Math.pow(digit,numOfDigits);
+			temp=Math.floor(temp/10);
+		}
+
+		if(sum==num)
+		{
+			alert("number is armstrong");
+		}
+		else
+		{
+			alert("number is not armstrong");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script Lab1</title>
+	<script type="text/javascript">
+		mystring="My college is"+"Darshan";
+		lenstr=mystring.length;
+		alert(mystring);
+		alert("Tital character in mystring:"+lenstr);
+
+		//	Backslash
+		var text="I am in \"Darshan\" University.";
+		alert(text);
+
+		//+ Operation
+		mystring="Darshan"+" "+"University";
+		alert(mystring);
+
+		//Concat function 
+		var text1="Darshan";
+		var text2="University";
+		var text3="Rajkot";
+		var result=text1.concat(" ",text2," ",text3);
+		var r1=result.length;
+		alert(result);
+		alert("Total character is result: "+r1);
+
+		//Slicing 
+		var name="Dipalee";
+		var part=name.slice(0,3);
+		console.log(part);
+
+
+		//Upper-Lower Case
+		console.log(name.toUpperCase());
+		console.log(name.toLowerCase());
+
+
+		//charAt() Function for position 
+		console.log(name.charAt(3));
+
+
+		//charCodeAt() Function for ASCII value
+		console.log(name.charCodeAt(4));
+
+		//startsWith() and endsWith() Function
+		console.log(name.startsWith('D'));
+		console.log(name.endsWith('e'));
+
+
+		//Includes() Function 
+		console.log(name.includes("pale"));
+
+
+		//IndexOf() Funtion
+		name="malayalam";
+
+		console.log(name.indexOf('a'));
+		console.log(name.lastIndexOf('a'));
+
+		console.log(name.search("aya"));
+
+		console.log(name.substr(0,5));//console.log(name.substring(0,5));
+
+
+		//Trim function
+		text="     Darshan  University           ";
+		console.log(text);
+		console.log(text.trim());
+
+
+		//Repalce function 
+		text1="Darshan College";
+		alert(text1.replace("College","University"));//console.log(text1.replace("College","University"));
+
+
+		// Number or Not a Number verification
+		y=Number("10");
+		z=Number("Dipu");
+		console.log(y);
+		console.log(z);
+
+		x=parseInt("10.35");
+		console.log(x);
+
+		x=parseInt("10 years");
+		console.log(x);
+
+
+		x=parseInt("years 10");
+		console.log(x);
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advance calculator</title>
+	
+	<style type="text/css">
+		.a{
+			color: white;
+			text-align: center;
+			background-color:blue;
+		}
+		.b{
+			background-color: white;
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<table align="center" border="2px" bgcolor="grey">
+		 <tr>
+		 	<td colspan="5" height="50px" class="b">
+		 		<input type=text id="display">
+		 	</td>
+		 </tr>
+		
+		<tr>
+			<td><button name="7" value="7" class="a num">7</button></td>
+			<td><button name="8" value="8" class="a num">8</button></td>
+			<td><button name="9" value="9" class="a num">9</button></td>
+			<td><button name="-" value="-" class="a opretor">-</button></td>
+			<td><button name="sin(" value="sin(" class="a opretor">sin(</button></td>
+		</tr>
+		<tr>
+			<td><button name="4" value="4" class="a num">4</button></td>
+			<td><button name="5" value="5" class="a num">5</button></td>
+			<td><button name="6" value="6" class="a num">6</button></td>
+			<td><button name="+" value="+" class="a opretor">+</button></td>
+			<td><button name="tan(" value="tan(" class="a opretor">tan(</button></td>
+		</tr>
+		<tr>
+			<td><button name="1" value="1" class="a num">1</button></td>
+			<td><button name="2" value="2" class="a num">2</button></td>
+			<td><button name="3" value="3" class="a num">3</button></td>
+			<td><button name="*" value="*" class="a opretor">*</button></td>
+			<td><button name="E" value="E" class="a opretor">E</button></td>
+		</tr>
+		<tr>
+			<td><button name="C" value="C" class="a clear">C</button></td>
+			<td><button name="0" value="0" class="a opretor">0</button></td>
+			<td><button name="=" value="=" class="a calculate">=</button></td>
+			<td><button name="/" value="/" class="a opretor">/</button></td>
+			<td><button name="pi" value="pi" class="a opretor">pi</button></td>
+		</tr>
+		<tr>
+			<td><button name="^" value="^" class="a opretor">^</button></td>
+			<td><button name="(" value="(" class="a opretor">(</button></td>
+			<td><button name=")" value=")" class="a opretor">)</button></td>
+			<td><button name="sqrt(" value="sqrt(" class="a opretor">sqrt(</button></td>
+			<td><button name="ln2" value="ln2" class="a opretor">ln2</button></td>
+		</tr>
+		<tr>
+			<td><button name="log10" value="log10" class="a opretor">log10</button></td>
+			<td><button name="l2e" value="l2e" class="a opretor">l2e</button></td>
+			<td><button name="l10e" value="l10e" class="a opretor">l10e</button></td>
+			<td><button name="exp" value="exp" class="a opretor">exp</button></td>
+			<td><button name="%" value="%" class="a opretor">%</button></td>
+		</tr>
+	</table> 
+
+</body>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script >
+	console.log($);
+	$(document).ready(function()
+	{
+		let displayvalue="";
+		$(".num").click(function()
+		{
+			displayvalue+=$(this).text();
+			$("#display").val(displayvalue);
+		});
+		$(".opretor").click(function()
+		{
+			displayvalue+=$(this).text();
+			$("#display").val(displayvalue);
+		});
+		$(".clear").click(function(){
+			displayvalue="";
+			$("#display").val(displayvalue);
+		});
+		$(".calculate").click(function(){
+				displayvalue=eval(displayvalue);
+				$("#display").val(displayvalue);
+		});
+	});
+</script>
+</html>

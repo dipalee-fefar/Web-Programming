@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Make Simple Calculator</title>
+	<script type="text/javascript">
+		
+		// Using promtbox
+
+		var a=parseInt(prompt("Enter Number 1 :"));
+		var b=parseInt(prompt("Enter Number 2 :"));
+
+		var operators=prompt("+,-,*,/,%");
+		var result;
+
+		switch(operators)
+		{
+			case'+':
+			result=(a+b);
+			alert(result);
+			break;
+
+			case'-':
+			result=(a-b);
+			alert(result);
+			break;
+			
+			case'*':
+			result=(a*b);
+			alert(result);
+			break;
+			
+			case'/':
+			result=(a/b);
+			alert(result);
+			break;
+			
+			case'%':
+			result=(a%b);
+			alert(result);
+			break;
+
+			default:
+			alert("Invalid Input");
+		}
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

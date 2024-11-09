@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthdate</title>
+	
+	<script type="text/javascript">
+		function daysremaining(){
+			currentDate = new Date();
+			currentYear =  currentDate.getFullYear();
+			d = document.getElementById("dob").value;
+			dob = new Date(d);
+			dob.setFullYear(currentYear);
+
+			if(dob<currentDate)
+			{
+				dob.setFullYear(currentYear+1);
+			}
+			timeleft= Math.abs(dob-currentDate);
+			daysleft= Math.ceil(timeleft/(1000*60*60*24));
+
+			if(daysleft>365)
+				document.write("its your birthday today");
+			else
+				document.write("your birthday in :"+daysleft+"days");
+		
+	</script>
+</head>
+<body>
+	<form>
+		Select DoB:<input type="date" name="dob" id="dob"><br>
+		<input type="submit" value="Calculate" onclick="daysremaining()">
+		<p id="abc">345</p>
+	</form>
+</body>
+</html>

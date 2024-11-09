@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrom</title>
+	<script type="text/javascript">
+		
+		var n=parseInt(prompt("Enter a  number :"));
+		var rev=0;
+		var a=n; 
+
+		while(n>0)
+		{
+			b=n%10;
+			rev=(rev*10)+b;
+			n=parseInt(n/10);
+		}
+		if(a==rev)
+		{
+			alert("Number is pelidrom :");
+		}
+		else
+		{
+			alert("Number is not pelidrom :");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

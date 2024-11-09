@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Functions</title>
+	<script type="text/javascript">
+
+	var arr=[];
+	var size = prompt("Enter your size :");
+
+	for(i=0;i<size;i++)
+	{
+		arr[i]=prompt("Enter element");
+	}
+	document.write(arr);
+	document.write("<br>");
+
+	arr.unshift(9);
+	document.write("Your unshifted array is :",arr);
+	document.write("<br>");
+
+	arr.shift(9);
+	document.write("Your shifted array is :",arr);
+	document.write("<br>");
+
+	arr.splice(3);
+	document.write("Your spliced array is :",arr);
+	document.write("<br>");
+
+	arr.slice(3);
+	document.write("Your slice array is :",arr);
+	document.write("<br>");
+
+	arr.sort(6);
+	document.write("Your sorted array is :",arr);
+	document.write("<br>");
+
+	arr.reverse(6);
+	document.write("Your reverse array is :",arr);
+	document.write("<br>");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

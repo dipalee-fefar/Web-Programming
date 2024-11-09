@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hide and Show</title>
+</head>
+<body>
+	<p>Dipalee</p>
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+</body>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("p").hide(5000);
+		});
+		$("#show").click(function(){
+			$("p").show(3000);
+		});
+	});
+</script>
+</html>

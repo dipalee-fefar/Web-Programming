@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime number between two number</title>
+	<script type="text/javascript">
+
+		var a= parseInt(prompt("Enter lower number: "));
+		var b= parseInt(prompt("Enter higher number: "));
+
+		console.log("The prime numbers a and b are:");
+
+    let d=0;
+	
+	for (i=a; i<=b; i++) 
+	{
+
+    	for (j=2; j<i; j++)
+    	{
+        	if (i%j==0) 
+        	{
+            	flag=1;
+            	break;
+       		}
+    
+   		 if (i>1 && d==0) 
+   		 {
+       	 	document.write(i);
+   		 }
+   	}
+}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

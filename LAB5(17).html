@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find max Number</title>
+	<script type="text/javascript">
+		
+	var numArray=[];
+	var size = prompt("Enter your size :");
+
+	for(i=0;i<size;i++)
+	{
+		numArray[i]=prompt("Enter element");
+	}
+	document.write(numArray);
+	document.write("<br>");
+
+	var max=numArray[0]
+	for(i=0;i<size;i++)
+		if(numArray[i]>max)
+		{
+			max=numArray[i];
+		}
+	document.write("Maximum Number is" ,max);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

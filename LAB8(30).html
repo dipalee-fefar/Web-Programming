@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Call back</title>
+	<script type="text/javascript">
+		function add(a,b,d,nextFun)
+		{
+			ans=a+b;
+			nextFun(ans,d);
+			return ans;
+		}
+		function mul(a,b)
+		{
+			ans=a*b;
+			return ans;
+		}
+		p1=10;
+		p2=20;
+		p3=30;
+
+		ans=add(p1,p2,p3,mul);
+		document.write(ans);
+		document.write("<br>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
